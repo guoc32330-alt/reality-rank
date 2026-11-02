@@ -1,0 +1,25 @@
+import type { RankDefinition } from "@/types";
+export const RANKS: RankDefinition[] = [
+  ["Bronze III", 0, "#bf916e", 0.7],
+  ["Bronze II", 100, "#bf916e", 0.7],
+  ["Bronze I", 220, "#bf916e", 0.7],
+  ["Silver III", 370, "#bdc6d0", 0.8],
+  ["Silver II", 550, "#bdc6d0", 0.8],
+  ["Silver I", 760, "#bdc6d0", 0.8],
+  ["Gold III", 1000, "#d8b775", 1],
+  ["Gold II", 1300, "#d8b775", 1],
+  ["Gold I", 1650, "#d8b775", 1],
+  ["Platinum III", 2050, "#8cbeb7", 1],
+  ["Platinum II", 2500, "#8cbeb7", 1],
+  ["Platinum I", 3000, "#8cbeb7", 1],
+  ["Diamond III", 3600, "#a9b5ee", 1.1],
+  ["Diamond II", 4300, "#a9b5ee", 1.1],
+  ["Diamond I", 5100, "#a9b5ee", 1.1],
+  ["Master", 6100, "#b6a0d0", 1.15],
+  ["Immortal", 7500, "#e7acb6", 1.2],
+].map(([name, threshold, color, maintenance]) => ({
+  name: String(name),
+  threshold: Number(threshold),
+  color: String(color),
+  maintenance: Number(maintenance),
+}));

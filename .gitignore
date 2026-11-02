@@ -1,0 +1,12 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.sites-runtime/
+.env*
+!.env.example
+test-results/
+
+# Local editor and hosting configuration
+.vscode/
+.openai/

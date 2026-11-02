@@ -1,0 +1,1 @@
+export const RECOVERY_MULTIPLIER = 1.25;
